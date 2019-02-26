@@ -25,7 +25,7 @@ if ((currency>0) && (currency<10000)){
 	}
 	k=makeExch;
 	}
-return (JSON.stringify(k));	
+return (k);	
     // Your code goes here!
     // Return an object containing the minimum number of coins needed to make change
 }
