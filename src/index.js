@@ -11,8 +11,8 @@ let k;
 let m = [50,25,10,5,1];
 let usl=true;
 let l=0;
-if (currency<=0) k='{}';
-if (currency>=10000) k='{error: "You are rich, my friend! We don'+"'"+'t have so much coins for exchange"}';
+if (currency<=0) k=makeExch;
+if (currency>=10000) {makeExch={error: "You are rich, my friend! We don't have so much coins for exchange"};  k=makeExch;}
 if ((currency>0) && (currency<10000)){
 	let i=0;
 	while (usl==true){
